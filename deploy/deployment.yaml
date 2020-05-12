@@ -22,7 +22,7 @@ spec:
         - name: MYSQL_ROOT_PASSWORD
           valueFrom:
             secretKeyRef:
-              key: mysql-root-password
+              key: mysql-password
               name: mysql-wordpress-secrets
         image: mysql:5.6
         imagePullPolicy: Always
